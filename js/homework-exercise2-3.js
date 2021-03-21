@@ -8,13 +8,13 @@
     - если а и b отрицательные, вывести их произведение;
     - * (этот пункт по сложнее, делайте по желанию) если а и b разных знаков, вывести их сумму;*/
 
-let a = +prompt("Введите a:");
-let b = +prompt("Введите b:");
+let operandLeft = +prompt("Введите a:");
+let operandRight = +prompt("Введите b:");
 
-if (a >= 0 && b >= 0) {
-    alert(a - b);
-} else if (a < 0 && b < 0) {
-    alert(a * b);
+if (operandLeft >= 0 && operandRight >= 0) {
+    alert(operandLeft - operandRight);
+} else if (operandLeft < 0 && operandRight < 0) {
+    alert(operandLeft * operandRight);
 } else { // это условие можно усложнить, прописать через && и ||, но так проще
-    alert(a + b);
+    alert(operandLeft + operandRight);
 }

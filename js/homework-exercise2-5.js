@@ -80,8 +80,8 @@ function mathOperation(arg1, arg2, operation) {
 
 
 
-let operation = prompt("Выберите операцию:\n1. Сумма\n2. Разность\n3.Произведение\n4.Частное");
-let a = +prompt("Введите первый операнд");
-let b = +prompt("Введите второй операнд");
+let operationDetails = prompt("Выберите операцию:\n1. Сумма\n2. Разность\n3.Произведение\n4.Частное");
+let arg1 = +prompt("Введите первый операнд");
+let arg2 = +prompt("Введите второй операнд");
 
-mathOperation(a, b, operation);
+mathOperation(a, b, operationDetails);

@@ -43,35 +43,35 @@ function toSharey(x1, x2) {
 let operation = prompt("Выберите операцию:\n1. Сумма\n2. Разность\n3.Произведение\n4.Частное");
 // Преобразование строки в строчный формат
 operation = operation.toLowerCase();
-let a = +prompt("Введите первый операнд");
-let b = +prompt("Введите второй операнд");
+let FirstOperand = +prompt("Введите первый операнд");
+let SecondOperand = +prompt("Введите второй операнд");
 // Объявление переменной для вывода результата
-let result;
+let resultOperand;
 
 switch (operation) {
     case "1":
     case "сумма":
-        result = toFold(a, b);
-        alert(result);
+        result = toFold(FirstOperand, SecondOperand);
+        alert(resultOperand);
         break;
     case "2":
     case "разность":
-        result = subtract(a, b);
-        alert(result);
+        result = subtract(FirstOperand, SecondOperand);
+        alert(resultOperand);
         break;
     case "3":
     case "произведение":
         // TODO: попытался пролизведение и частное вывести через стролочную функцию, но даже console.log(a*b); не вывелось
         //result = () => a * b;
-        result = multiply(a, b);
-        alert(result);
+        result = multiply(FirstOperand, SecondOperand);
+        alert(resultOperand);
         break;
     case "4":
     case "частное":
         // TODO: попытался пролизведение и частное вывести через стролочную функцию, но даже console.log(a*b); не вывелось
         // result = () => a / b;
-        result = toSharey(a , b);
-        alert(result);
+        result = toSharey(FirstOperand , SecondOperand);
+        alert(resultOperand);
         break;
     default:
         alert("Выбрана неправильная операция");

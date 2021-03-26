@@ -11,32 +11,32 @@
 //* Упс, в 4 задании поспешил, ну ладно
 
 /** Функция суммы
- * @param {number} первый операнд
- * @param {number} второй операнд
+ * @param {number} x1 первый операнд
+ * @param {number} x2 второй операнд
  */
 function toFold(x1, x2) {
     return x1 + x2;
 }
 
 /** Функция разности
- * @param {number} первый операнд
- * @param {number} второй операнд
+ * @param {number} x1 первый операнд
+ * @param {number} x2 второй операнд
  */
 function subtract(x1, x2) {
     return x1 - x2;
 }
 
 /** Функция произведения
- * @param {number} первый операнд
- * @param {number} второй операнд
+ * @param {number} x1 первый операнд
+ * @param {number} x2 второй операнд
  */
 function multiply(x1, x2) {
     return x1 * x2;
 }
 
 /** Функция произведения
- * @param {number} первый операнд
- * @param {number} второй операнд
+ * @param {number} x1 первый операнд
+ * @param {number} x2 второй операнд
  */
 function toSharey(x1, x2) {
     return x1 / x2;

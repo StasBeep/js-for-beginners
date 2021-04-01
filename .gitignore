@@ -30,3 +30,5 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows
 
 style.css.map
+
+jshintrc.json

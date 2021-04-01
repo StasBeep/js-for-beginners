@@ -3,16 +3,18 @@ let game = {
      * Запуск игры
      */
     run() {
-        while(true){
+        while (true) {
             const direction = mover.getDirection();
-            if(direction === null){
+            if (direction === null) {
                 console.log("Игра окончена");
                 return;
             }
             const nextPoint = mover.getNextPosition(direction);
-            renderer.clear();
-            player.move(nextPoint);
-            renderer.render();
+            if (mover.yesPlayerMove(nextPoint)) {
+                renderer.clear();
+                player.move(nextPoint);
+                renderer.render();
+            }
         }
     },
 

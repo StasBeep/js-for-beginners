@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 //*  Сортировка
 //* "photos" in element - поиск свойства в объекте

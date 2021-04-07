@@ -8,7 +8,7 @@ let game = {
             this.nextQuestionIndex = 0;
             this.score = 0;
             if(confirm('Хотите сыграть ещё раз?')) {
-                thi.run();
+                this.run();
             }
             return;
         }

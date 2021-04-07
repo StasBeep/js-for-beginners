@@ -18,12 +18,11 @@ function splittingNumber(numberFigure) {
     if (numberFigure < 0 || numberFigure > 999 || isNaN(numberFigure)) {
         alert("Не число");
         return {};
-    } else {
-        return {
-            units: numberFigure % 10,
-            tens: Math.floor(numberFigure / 10) % 10,
-            hundreds: Math.floor(numberFigure / 100)
-        }
+    }
+    return {
+        units: numberFigure % 10,
+        tens: Math.floor(numberFigure / 10) % 10,
+        hundreds: Math.floor(numberFigure / 100)
     }
 }
 

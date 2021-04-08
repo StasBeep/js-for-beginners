@@ -46,5 +46,8 @@ const buttonEl = document.querySelector('button');
 
 let s = buttonEl.addEventListener('click', name);
 
+let z = document.getElementById('z');
+// z.textContent = 's';
+// z.innerText = s;
 // document.getElementById('z').value = s;
 // document.getElementById('z') = s;

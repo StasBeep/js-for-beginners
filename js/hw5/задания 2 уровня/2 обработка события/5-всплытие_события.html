@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <ul>
         <li>
             <button>Кнопка</button>
@@ -24,7 +26,15 @@
     объект события, передаваемый в функцию-обработчик клика. -->
 
     <script>
-        
+        "use strict";
+        let btn = document.querySelectorAll('button');
+        btn.forEach((el) => {
+            el.addEventListener('click', function(event) {
+                // Как вывести номер кнопки вызываемое (через свойства)? Что это за свойство
+                console.log(event.target);
+            });
+        })
     </script>
 </body>
+
 </html>

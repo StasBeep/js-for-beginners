@@ -13,5 +13,15 @@
     <a href="#">link</a>
     используя метод insertAdjacentHTML.
     -->
+    <script>
+        let divOneEl = document.getElementsByClassName('menu');
+        let aLinkClMenu = document.createElement('a');
+        aLinkClMenu.innerText = 'link';
+        divOneEl[0].insertAdjacentHTML("afterbegin", '<a href="#">link</a>');
+        // То есть на созданных переменных это не работает?
+        divOneEl[0].insertAdjacentHTML("afterbegin", 'aLinkClMenu');
+        // Не выводит ничего седержащегося в переменной
+        divOneEl[0].insertAdjacentHTML("afterbegin", aLinkClMenu);
+    </script>
 </body>
 </html>

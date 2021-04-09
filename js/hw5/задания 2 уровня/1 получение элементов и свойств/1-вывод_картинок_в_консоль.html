@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <img src="https://placeimg.com/100/100/animals" alt="">
     <img src="https://placeimg.com/100/100/arch" alt="">
@@ -16,5 +18,21 @@
     и выведите каждую картинку в консоль. Выведите в консоль только
 	элементы коллекции, не нужно пытаться сделать, чтобы в консоли
 	появилось изображение. -->
+    <script>
+        "use strict";
+        let images = document.getElementsByTagName('img');
+        for (let i = 0; i < images.length; i++){
+            console.log(images[i]);
+        }
+
+        for(let x of images){
+            console.log(x);
+        }
+
+        // Почему-то forEach не срабатывает, я понимаю, что его в прототипе нет
+        // но вот почему его нет, не понимаю, ведь это массив
+        images.forEach((el) => console.log(el));
+    </script>
 </body>
+
 </html>

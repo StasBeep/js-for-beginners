@@ -16,7 +16,11 @@
     -->
 
     <script>
-
+        let divParen = document.getElementsByTagName('div');
+        let createh3 = document.createElement('h3');
+        createh3.innerText = "hello world";
+        // ? Почему нужно [0] указывать?
+        divParen[0].appendChild(createh3);
     </script>
 </body>
 </html>

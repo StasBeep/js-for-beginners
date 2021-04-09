@@ -29,6 +29,7 @@
     и выведите их в консоль. -->
     
     <script>
+        "use strict";
         let cardBody = document.querySelectorAll('div.card-body > a.card-link');
         cardBody.forEach((el) => console.log(el));
         cardBody.forEach((el) => console.log(el.innerText));

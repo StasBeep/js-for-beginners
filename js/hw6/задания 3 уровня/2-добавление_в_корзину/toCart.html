@@ -42,9 +42,15 @@
 
     <script>
         
+        let arrButton = document.querySelectorAll('button');
+
+        arrButton.forEach((btn) => {
+            btn.addEventListener('click', buttonClickHandler);
+        });
 		
 		function buttonClickHandler(event) {
-		
+            event.target.parentNode.style.background = "lightgreen";
+            event.target.innerHTML = 'Добавлено';
 		}
     </script>
 </body>

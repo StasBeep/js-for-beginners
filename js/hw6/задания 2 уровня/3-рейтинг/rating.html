@@ -119,6 +119,36 @@
             fourthStar.classList.remove(goldenClass);
             fifthStar.classList.remove(goldenClass);
         });
+
+        // ! Приметивный вариант, более простой и короткий
+        let iElems = document.querySelectorAll('i');
+        iElems.forEach(function(i) {
+            i.addEventListener('mouseover', function(event) {
+                addGoldenClass(event.target);
+            });
+            i.addEventListener('mouseout', function(event) {
+                removeGoldenClass(event.target);
+            });
+        })
+
+        function addGoldenClass(i) {
+            i.classList.add('golden');
+            // Смотрим предыдущий элемент
+            let previousElem = i.previousElementSibling;
+            // Проверка на то, что он существует и его тег i
+            if (previousElem !== null && previousElem.tagName === 'I') {
+                // если условие выполняется, то вызываем функцию рекурсивно
+                return addGoldenClass(previousElem);
+            }
+        }
+
+        function removeGoldenClass(i) {
+            i.classList.remove('golden');
+            let previousElem = i.previousElementSibling;
+            if (previousElem !== null && previousElem.tagName === 'I') {
+                return removeGoldenClass(previousElem);
+            }
+        }
     </script>
 </body>
 

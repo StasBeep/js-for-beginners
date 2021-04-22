@@ -43,11 +43,11 @@
         let inpSec = document.getElementById('second');
 
         formEl.addEventListener('submit', (event) => {
-            if(inpFirst.value == "" || inpFirst.value == null) {
+            if(inpFirst.value == "") {
                 inpFirst.style.borderColor = 'red';
                 event.preventDefault();
             }
-            if(inpSec.value == "" || inpSec.value == null) {
+            if(inpSec.value == "") {
                 inpSec.style.borderColor = 'red';
                 event.preventDefault();
             }

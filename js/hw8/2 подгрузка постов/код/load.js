@@ -11,7 +11,7 @@ function init() {
     // 4. Если условие истинно, то вызывайте insertPosts и рекурсивно вызывайте
     // init.
 
-    // Не совсем понятно вот условие
+    // Не совсем понятно это условие
     if (window.innerHeight === document.body.offsetHeight) {
         insertPosts();
         init();
@@ -21,7 +21,7 @@ init();
 
 document.addEventListener('scroll', function(event) {
 
-    // Не совсем понятно вот условие
+    // Не совсем понятно это условие
     if (scrollCheck.getBoundingClientRect().top <= window.innerHeight) {
         // 5. Если условие истинно вызывайте insertPosts.
         insertPosts();

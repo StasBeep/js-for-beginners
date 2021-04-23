@@ -38,12 +38,6 @@
         заполнения прогресс-бара.
         */
 
-        /*! Не понимаю почему прогресс бар заполняется сразу без timeout*/
-        for (let i = 0; i <= 100; i++) {
-            setTimeout(changeProgress(i), i * 5);
-        }
-
-        /* Правильный вариант */
         for (let i = 0; i <= 100; i++) {
             setTimeout(function () {
                 changeProgress(i);
